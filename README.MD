@@ -27,7 +27,7 @@
 The `mint` function in the TinlakeNFT contract plays a critical role in the Centrifuge protocol by enabling the creation of new non-fungible tokens (NFTs) that represent real-world assets. These assets can include invoices, real estate, or any physical item that can be tokenized. When a new NFT is minted, it signifies that a corresponding real-world asset has been registered and digitized on the blockchain. This process of minting and registration allows the asset to be managed, traded, and utilized within the Centrifuge ecosystem. The `mint` function ensures that each asset is uniquely identified and its metadata is securely stored, facilitating the integration of these tokenized assets into decentralized finance (DeFi) applications, thus bridging the gap between physical assets and blockchain technology. By doing so, the Centrifuge protocol enhances transparency, liquidity, and accessibility of real-world assets in the digital economy.
 
 ### Detailed Usage
-The `mint` function uses the `abi.encodeWithSignature` method to encode a function call that sets the token URI. Here’s a detailed breakdown of its usage:
+The `mint` function uses the `abi.encodeWithSignature` method to encode a function call that sets the token URI.
 
 - **Function Call Encoding**: The `abi.encodeWithSignature` method is utilized to encode the function signature `setTokenURI(uint256,string)` along with the token ID and the URI string. This encoded data is used to set the token's metadata.
 - **Function Logic**: Upon execution, the function first checks if the token ID already exists using `_exists(tokenId)`. If the token does not exist, it proceeds to mint a new token with `_mint(to, tokenId)`.
@@ -38,5 +38,7 @@ The `mint` function is central to the tokenization process, transforming physica
 
 
 ## Useful Links
-- **Centrifuge Documentation**: [Centrifuge Documentation](https://docs.centrifuge.io/)
-- **TinlakeNFT on Etherscan**: [TinlakeNFT on Etherscan](https://etherscan.io/address/0x0bcD0dBd25C3dB9b6E0a6E49B2919f2eBBc1733b#code)
+- **Centrifuge Documentation**: [Centrifuge Documentation](https://docs.centrifuge.io)
+- **Etherscan**: [Etherscan](https://etherscan.io)
+- **Solidity Documentation**: [Solidity Documentation](https://docs.soliditylang.org/en/v0.8.6/)
+- **Ethereum Developer Resources**: [Ethereum Developer Resources](https://ethereum.org/en/developers/)
