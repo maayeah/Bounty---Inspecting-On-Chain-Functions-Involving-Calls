@@ -7,7 +7,7 @@
 
 ## Function Analysis
 - **Function Name**: `mint`
-- **Block Explorer Link**: TinlakeNFT on Etherscan
+- **Block Explorer Link**: [TinlakeNFT on Etherscan](https://etherscan.io/address/0x0bcD0dBd25C3dB9b6E0a6E49B2919f2eBBc1733b#code)
 - **Function Code**:
     ```solidity
     function mint(address to, uint256 tokenId, bytes calldata data) external onlyOwner {
